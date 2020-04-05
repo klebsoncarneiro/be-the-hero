@@ -54,5 +54,12 @@ module.exports = {
         await connection('incidents').where('id', id).delete();
 
         return response.status(204).send();//sucesso, 'no content'
-    }
+    },
+
+    /*async deleteAll(request, response) {   
+
+        await connection('incidents').delete();
+
+        return response.status(204).send();//sucesso, 'no content'
+    }*/   
 }

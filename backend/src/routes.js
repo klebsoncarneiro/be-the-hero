@@ -8,11 +8,11 @@ const SessionController = require('./controllers/SessionController')
 const routes = express.Router();
 
 /**
- * Tipos de parâmetros:
+ * Tipos de parÃ¢metros:
  * 
- * Query Params: Parâmetros nomeados enviados na toda após "?" (Filtros, paginação)
- * Route Params: Parâmetros utilizados para identificar recursos
- * Request Body: Corpo da requisição, utilizado para criar ou alterar recursos
+ * Query Params: ParÃ¢metros nomeados enviados na toda apÃ³s "?" (Filtros, paginaÃ§Ã£o)
+ * Route Params: ParÃ¢metros utilizados para identificar recursos
+ * Request Body: Corpo da requisiÃ§Ã£o, utilizado para criar ou alterar recursos
  */
 
 routes.post('/sessions', SessionController.create);
@@ -23,6 +23,7 @@ routes.post('/ongs', OngController.create);
 routes.post('/incidents', IncidentController.create);
 routes.get('/incidents', IncidentController.index);
 routes.delete('/incidents/:id', IncidentController.delete);
+//routes.delete('/incidents/', IncidentController.deleteAll);
 
 routes.get('/profile', ProfileController.index);
 
