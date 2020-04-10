@@ -2,7 +2,7 @@
 
 # Semana OmniStack 11.0
 
-Na semana OmniStack 11.0 organizada pela Rocketseat nos dias 23/07 a 29/03 milhares de programadores acompanharam aulas gratuitas para desenvolver um aplicativo completo, do zero, usando as melhores tecnologias em programação, direto ao ponto e do jeito certo.
+Na semana OmniStack 11.0 organizada pela Rocketseat nos dias 23/03 a 29/03, milhares de programadores acompanharam aulas gratuitas para desenvolver um aplicativo completo, do zero, usando as melhores tecnologias em programação, direto ao ponto e do jeito certo.
 
 
 # Be The Hero
