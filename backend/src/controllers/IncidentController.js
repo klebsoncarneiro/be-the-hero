@@ -47,13 +47,17 @@ module.exports = {
             .select('ong_id')
             .first();
 
+        if (!incident){
+            return response.status(406).json({error: 'ID de incidente inválido.'});//Not Acceptable
+        }
+
         if (incident.ong_id != ong_id){
-            return response.status(401).json({error: 'Operation not permitted.'});//Nao Autorizado
+            return response.status(401).json({error: 'Sem permissão para excluir esse incidente.'});//Unauthorized
         }
 
         await connection('incidents').where('id', id).delete();
 
-        return response.status(204).send();//sucesso, 'no content'
+        return response.status(204).send();//sucesso, 'No Content'
     },
 
     /*async deleteAll(request, response) {   
